@@ -30,8 +30,9 @@ Bu proje, **derin öğrenme tabanlı görüntü inpainting** (eksik bölge doldu
    cd DFNet-ImageInpainting
 
 2.	**Gerekli Kütüphaneleri Kurun:**
-   ```bash
+```bash
     pip install -r requirements.txt
+```
 
 4.	**Veri Setini Hazırlayın:**
 	•	Orijinal resimlerinizi bir klasöre koyun. Örneğin: data/original_images
@@ -39,30 +40,30 @@ Bu proje, **derin öğrenme tabanlı görüntü inpainting** (eksik bölge doldu
 
 5.	**Modeli Eğitme:**
 Aşağıdaki komutla modeli eğitebilirsiniz:
-   ```bash
+```bash
     python train.py
-
+```
     •	Eğitilmiş model ağırlıkları trained_dfnet.pth dosyasına kaydedilir.
 	
 6.	**Modeli Test Etme:**
 Eğitilmiş modeli kullanarak yeni maskelenmiş resimlerin maskesiz hallerini tahmin etmek için
-   ```bash
+```bash
     python test.py
-
+```
 
 ## **Proje Kullanımı**
 
 1. **Modeli Eğitim İçin:**
 
 	•	Orijinal ve maskelenmiş resimleri kullanarak modeli eğitin:
-   ```bash
+```bash
     python train.py
-
+```
 2. **Modeli Test İçin:**
 	•	Yeni maskelenmiş bir görüntüyü test edin:
-   ```bash
+```bash
     python test.py
-
+```
 ## **Gereksinimler**
 
 Proje için gerekli kütüphaneleri kurmak için aşağıdaki dosyayı kullanabilirsiniz:
