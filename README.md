@@ -15,23 +15,10 @@ Bu proje, **derin öğrenme tabanlı görüntü inpainting** (eksik bölge doldu
 
 ## **Kullanılan Teknolojiler**
 
-- **Python 3.x**
+- **Python 3.**
 - **PyTorch** (Derin Öğrenme Kütüphanesi)
 - **OpenCV** (Görüntü İşleme)
 - **Matplotlib** (Sonuçları Görselleştirme)
-
----
-
-## **Proje Yapısı**
-
-DFNet-ImageInpainting/
-│
-├── DFNet_model.py        # DFNet model tanımı
-├── train.py              # Model eğitimi için kod
-├── test.py               # Yeni resimler üzerinde tahmin için kod
-├── requirements.txt      # Gerekli kütüphaneler listesi
-├── trained_dfnet.pth     # Eğitilmiş model ağırlıkları
-└── README.md             # Proje açıklaması ve kullanım talimatları
 
 ---
 
@@ -39,38 +26,41 @@ DFNet-ImageInpainting/
 
 1. **Proje Depolarını Klonlayın:**
    ```bash
-   git clone <GitHub-repo-link>
+   git clone https://github.com/1ahmetbb/DFNet-ImageInpainting
    cd DFNet-ImageInpainting
 
 2.	**Gerekli Kütüphaneleri Kurun:**
+   ```bash
     pip install -r requirements.txt
 
-3.	**Veri Setini Hazırlayın:**
+4.	**Veri Setini Hazırlayın:**
 	•	Orijinal resimlerinizi bir klasöre koyun. Örneğin: data/original_images
 	•	Maskelenmiş resimlerinizi oluşturmak için train.py içinde mask_and_save_images fonksiyonunu kullanın.
 
-4.	**Modeli Eğitme:**
+5.	**Modeli Eğitme:**
 Aşağıdaki komutla modeli eğitebilirsiniz:
-
+   ```bash
     python train.py
 
     •	Eğitilmiş model ağırlıkları trained_dfnet.pth dosyasına kaydedilir.
 	
-5.	**Modeli Test Etme:**
-Eğitilmiş modeli kullanarak yeni maskelenmiş resimlerin maskesiz hallerini tahmin etmek için:
+6.	**Modeli Test Etme:**
+Eğitilmiş modeli kullanarak yeni maskelenmiş resimlerin maskesiz hallerini tahmin etmek için
+   ```bash
     python test.py
 
 
 ## **Proje Kullanımı**
 
 1. **Modeli Eğitim İçin:**
-	•	Orijinal ve maskelenmiş resimleri kullanarak modeli eğitin:
 
+	•	Orijinal ve maskelenmiş resimleri kullanarak modeli eğitin:
+   ```bash
     python train.py
 
 2. **Modeli Test İçin:**
 	•	Yeni maskelenmiş bir görüntüyü test edin:
-
+   ```bash
     python test.py
 
 ## **Gereksinimler**
